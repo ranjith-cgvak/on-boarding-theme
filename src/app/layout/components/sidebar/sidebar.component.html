@@ -2,7 +2,7 @@
     <div class="list-group">
         <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;
-            <span>{{ 'Dashboard' | translate }}</span>
+            <span>{{ 'Dashboard' }}</span>
         </a>
         <!-- <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;
@@ -64,7 +64,10 @@
             <i class="fa fa-caret-down"></i>&nbsp;
             <span>{{ 'More Themes' | translate }}</span>
         </a> -->
-
+        <a routerLink="/pre-on-boarding" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-handshake-o"></i>&nbsp;
+            <span>{{ 'Pre On Boarding' }}</span>
+        </a>
         <div class="header-fields">
             <a (click)="rltAndLtr()" class="list-group-item">
                 <span><i class="fa fa-arrows-h"></i>&nbsp; RTL/LTR</span>
